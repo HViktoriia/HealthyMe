@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+:root{
+    --section-color-100: #EBD9B4;
+    --section-color-75: rgba(235, 217, 180, 0.75);
+    --section-color-50: rgba(235, 217, 180, 0.5);
+    --section-color-25: rgba(235, 217, 180, 0.25);
+    --menu-color-100: #9DBC98;
+    --menu-color-75: rgba(157, 188, 152, 0.75);
+    --menu-color-50: rgba(157, 188, 152, 0.5);
+    --menu-color-25: rgba(157, 188, 152, 0.25);
+    --navbar-color-100: #638889;
+    --navbar-color-75: rgba(99, 136, 137, 0.75);
+    --navbar-color-50: rgba(99, 136, 137, 0.5);
+    --navbar-color-25: rgba(99, 136, 137, 0.25);
+    --text-color-100: #1E494A;
+    --text-color-75: rgba(30, 73, 74, 0.75);
+    --text-color-50: rgba(30, 73, 74, 0.5);
+    --text-color-25: rgba(30, 73, 74, 0.25);
+
+   
+    --h1: 2,5 rem;
+    --h2: 2 rem;
+    --h3: 1,75 rem;
+    --h4: 1,5 rem;
+    --h5: 1,25 rem;
+    --h6: 1 rem;
+
+    --sub: 1,25 rem;
+    --label: 1 rem;
+    --ls: 0,25 rem;
+    --body: 0,875 rem;
+    --font-all: 'Roboto', sans-serif;
+    --font-header: 'PT Serif', serif;
+
+}
