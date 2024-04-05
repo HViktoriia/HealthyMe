@@ -37,6 +37,23 @@
     --font-header: 'PT Serif', serif;
 }
 
+
+/**
+* removing default styles of the browser
+**/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: var(--background-color-100);
+}
+
+/**
+* style rules for buttons
+**/
+
 .white-btn, 
 .dark-btn {
     color: var(--text-color-100);
@@ -52,3 +69,70 @@
     color: var(--background-color-100);
     background-color: var(--text-color-100);
 }
+
+/**
+* style  rules for header
+**/
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--menu-color-100);
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.header__icons{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.header__icons--textUp, 
+.header__icons--textDow,
+.header__icons-contrast,
+.header__icons--signUp,
+.header__logo{
+    max-width: 100%;
+    height: auto;
+}
+/**
+* style  rules for footer
+**/
+
+.footer{
+    background-color: var(--menu-color-100);
+}
+
+/**
+* style rules for labels in nav and footer
+**/
+
+.label, nav{
+    font-family: var(--font-header);
+    font-size: var(--label);
+    color: var(--text-color-100);
+    font-weight: 700;
+}
+.nav:hover{
+    text-decoration-line: underline;
+}
+
+/**
+* style  rules for sections (articles)
+**/
+.div_article_section{
+    position: relative;
+    background-color: var(--section-color-50);
+
+}
+.image_inside_the_article_section{
+    position: absolute;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+}
+/**
+* [class^=""]{}
+**/
