@@ -9,35 +9,46 @@
     <title>HealthyMe - Home</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__logo">
-            <a href="index.html"><img id="logo_image" src="/images/Logo.svg" alt="logotyp"></a>
-        </div>
-        <div class="header__icons">
-            <img class="header__icons--textUp" id="tekst_up" src="/images/TekstUp.svg" alt=" przycisk zwiekszenie tekstu">
-            <img class="header__icons--textDown" src="/images/TextDown.svg" alt="przycisk zmniejszenie tekstu">
-            <img class="header__icons-contrast" src="/images/Contrast.svg" alt="zmiana koloru strony">
-            <a class="header__icons--signUp" href=""><img src="/images/Sign.svg" alt="zaloguj sie"></a>
-        </div>
-    </header>
-    <main>
-    <div id="menu_sidebar">
-        <img src="/images/Menu_Hamburger.svg" alt="ikonka menu">
-            <menu id="main_menu">
-                <li><a href="">Zdrowie psychiczne</a></li>
-                <li><a href="">Zdrowie fizyczne</a></li>
-                <li><a href="">Czatbot</a></li>
-                <li><a href="">Forum</a></li>
-                <li><a href="">O nas</a></li>
-            </menu>
-            <a href="instagram.com"><img src="/images/Instagram_icon.svg" alt="instagram"></a>
-            <a href="facebook.com"><img src="/images/messenger_icon.svg" alt="messenger"></a>
-            <a href="tiktok.com"><img src="/images/tiktok_icon.svg" alt="tiktok"></a>
+    <div class="hero sticky">
+        <header class="header container">
+            <div class="header__logo">
+                <a href="index.html"><img id="logo_image" src="/images/Logo.svg" alt="logotyp"></a>
+            </div>
+            <div class="header__menu hidden">
+                <img class="header__menu--textUp" id="tekst_up" src="/images/TekstUp.svg" alt=" przycisk zwiekszenie tekstu">
+                <img class="header__menu--textDown" src="/images/TextDown.svg" alt="przycisk zmniejszenie tekstu">
+                <img class="header__menu-contrast" src="/images/Contrast.svg" alt="zmiana koloru strony">
+                <a class="header__menu--signUp" href=""><img src="/images/Sign.svg" alt="zaloguj sie"></a>
+            </div>
+            <div class="header__icons">
+                <i class="bi bi-list"></i>
+                <i class="bi bi-x hide"></i>
+            </div>
+        </header>
     </div>
-    <section id="greeting_section">
-        <div>
-            <h1>Witamy na naszym blogu o zdrowiu psychicznym i fizycznym!</h1>
-            <p>HealthyMe to przyjaciel, który pomoże ci zrozumieć twoją kondycję psychiczną i fizyczną. Na naszej stronie internetowej można znaleźć różne artykuły, zalecenia i wiele innych przydatnych informacji na temat stylu życia, wsparcia psychicznego, poczucia własnej wartości. Jeśli potrzebujesz rozmowy z psychologiem, możesz skorzystać z funkcji chatbota. Nasi specjaliści pomogą Ci, a Twoja rozmowa odbędzie się w trybie incognito, więc Twoje dane będą bezpieczne.</p>
+    
+    <main>
+        <div class="hero_sidebar sticky">
+            <div class="menu_sidebar">
+                <i class="bi bi-list" id="2"></i>
+                    <menu class="menu_sidebar--main_menu">
+                        <li><a href="">Zdrowie psychiczne</a></li>
+                        <li><a href="">Zdrowie fizyczne</a></li>
+                        <li><a href="">Czatbot</a></li>
+                        <li><a href="">Forum</a></li>
+                        <li><a href="">O nas</a></li>
+                    </menu>
+                    <div class="menu_sidebar--socialMediaIcons">
+                    <a href="instagram.com"><img src="/images/Instagram_icon.svg" alt="instagram"></a>
+                    <a href="facebook.com"><img src="/images/messenger_icon.svg" alt="messenger"></a>
+                    <a href="tiktok.com"><img src="/images/tiktok_icon.svg" alt="tiktok"></a>
+                    </div>  
+            </div>
+        </div>
+    <section class="greeting_section grid ">
+        <div class="greeting_section__background">
+            <h1 class="greeting_section__background--h1">Witamy na naszym blogu o zdrowiu psychicznym i fizycznym!</h1>
+            <p class="greeting_section__background--p">HealthyMe to przyjaciel, który pomoże ci zrozumieć twoją kondycję psychiczną i fizyczną. Na naszej stronie internetowej można znaleźć różne artykuły, zalecenia i wiele innych przydatnych informacji na temat stylu życia, wsparcia psychicznego, poczucia własnej wartości. Jeśli potrzebujesz rozmowy z psychologiem, możesz skorzystać z funkcji chatbota. Nasi specjaliści pomogą Ci, a Twoja rozmowa odbędzie się w trybie incognito, więc Twoje dane będą bezpieczne.</p>
         </div>
     </section>
     <section id="new_aricles_section">
@@ -108,4 +119,5 @@
         </div>
     </footer>
 </body>
+<script src="main.js"></script>
 </html>
