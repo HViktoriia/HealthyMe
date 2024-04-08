@@ -6,12 +6,14 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="design_system.css">
     <link rel="icon" href="/images/logo_flover.svg">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>HealthyMe - Home</title>
 </head>
 <body>
     <div class="hero sticky">
         <header class="header container">
             <div class="header__logo">
+                <button class="w3-button  w3-xlarge" onclick="open_sidebar()">☰</button>
                 <a href="index.html"><img id="logo_image" src="/images/Logo.svg" alt="logotyp"></a>
             </div>
             <div class="header__menu hidden">
@@ -21,7 +23,7 @@
                 <a class="header__menu--signUp" href=""><img src="/images/Sign.svg" alt="zaloguj sie"></a>
             </div>
             <div class="header__icons">
-                <i class="bi bi-list"></i>
+                <i class="bi bi-gear"></i>
                 <i class="bi bi-x hide"></i>
             </div>
         </header>
@@ -29,56 +31,80 @@
     
     <main>
         <div class="hero_sidebar sticky">
-            <div class="menu_sidebar">
-                <i class="bi bi-list" id="2"></i>
-                    <menu class="menu_sidebar--main_menu">
-                        <li><a href="">Zdrowie psychiczne</a></li>
-                        <li><a href="">Zdrowie fizyczne</a></li>
-                        <li><a href="">Czatbot</a></li>
-                        <li><a href="">Forum</a></li>
-                        <li><a href="">O nas</a></li>
-                    </menu>
-                    <div class="menu_sidebar--socialMediaIcons">
-                    <a href="instagram.com"><img src="/images/Instagram_icon.svg" alt="instagram"></a>
-                    <a href="facebook.com"><img src="/images/messenger_icon.svg" alt="messenger"></a>
-                    <a href="tiktok.com"><img src="/images/tiktok_icon.svg" alt="tiktok"></a>
-                    </div>  
+            <div class="menu_sidebar w3-bar-block w3-border-right" style="display:none" id="sidebarMenu">
+                <button onclick="close_sidebar()" class="w3-bar-item w3-large">Close &times;</button>        
+                <a href="" class="w3-bar-item w3-button">Zdrowie psychiczne</a>
+                        <a href="" class="w3-bar-item w3-button">Zdrowie fizyczne</a>
+                        <a href="" class="w3-bar-item w3-button">Czatbot</a>
+                        <a href="" class="w3-bar-item w3-button">Forum</a>
+                        <a href="" class="w3-bar-item w3-button">O nas</a>
+                    <!-- <div class="menu_sidebar--socialMediaIcons"> -->
+                    <a class="w3-bar-item w3-button" href="instagram.com"><img src="/images/Instagram_icon.svg" alt="instagram"></a>
+                    <a class="w3-bar-item w3-button" href="facebook.com"><img src="/images/messenger_icon.svg" alt="messenger"></a>
+                    <a class="w3-bar-item w3-button" href="tiktok.com"><img src="/images/tiktok_icon.svg" alt="tiktok"></a>
+                    <!-- </div>   -->
             </div>
         </div>
-    <section class="greeting_section grid ">
+
+    <section class="greeting_section grid">
         <div class="greeting_section__background">
             <h1 class="greeting_section__background--h1">Witamy na naszym blogu o zdrowiu psychicznym i fizycznym!</h1>
             <p class="greeting_section__background--p">HealthyMe to przyjaciel, który pomoże ci zrozumieć twoją kondycję psychiczną i fizyczną. Na naszej stronie internetowej można znaleźć różne artykuły, zalecenia i wiele innych przydatnych informacji na temat stylu życia, wsparcia psychicznego, poczucia własnej wartości. Jeśli potrzebujesz rozmowy z psychologiem, możesz skorzystać z funkcji chatbota. Nasi specjaliści pomogą Ci, a Twoja rozmowa odbędzie się w trybie incognito, więc Twoje dane będą bezpieczne.</p>
         </div>
     </section>
-    <section id="new_aricles_section">
-        <h1>Nasze nowe artykuły</h1>
-        <section class="new_article" id="1">
-            <img src="/images/jared-rice-NTyBbu66_SI-unsplash.jpg" alt="dziewcznyna, która siedzi i medutyje">
-            <a href=""><h2>Medytacja, jej wpływ na zdrowie psychiczne</h2></a>
-            <h3>Kathrine May</h3>
-            <p>Nasze życie jest tak stresujące, że czasami nawet nie wiemy, jak zatrzymać nasz ciąg myśli...</p>
-        </section>
-        <section class="new_article" id="2">
-            <img src="/images/emma-simpson-mNGaaLeWEp0-unsplash.jpg" alt="dziewczyna, która biega rano">
-            <a href=""><h2>Jak zacząć biegać</h2></a>
-            <h3>Robert McGonell</h3>
-            <p>Bieganie to popularny i łatwy do rozpoczęcia rodzaj sportu. Warto spróbować. Nie potrzebujemy profesjonalnego sprzętu, aby rozpocząć codzienne bieganie....</p>
-        </section>
+
+    <section class="new-aricles-section text-center">
+
+        <div class="new-aricles-section__header">
+            <h2>Nasze nowe artykuły</h2>
+        </div>
+
+        <div class="new-aricles-section__sections container grid">
+            <section class="new-aricles-section__sections--1 section-icon grid ">
+                <img class="responsive-image image-in-sections" src="/images/jared-rice-NTyBbu66_SI-unsplash.jpg" alt="dziewcznyna, która siedzi i medutyje">
+                <div class="text-in-section">
+                <a href=""><h3>Medytacja, jej wpływ na zdrowie psychiczne</h3></a>
+                <h4>Kathrine May</h4>
+                <p>Nasze życie jest tak stresujące, że czasami nawet nie wiemy, jak zatrzymać nasz ciąg myśli...</p>
+                </div>
+
+            </section>
+
+            <section class="new-aricles-section__sections--2 section-icon grid">
+                <img class="responsive-image image-in-sections" src="/images/emma-simpson-mNGaaLeWEp0-unsplash.jpg" alt="dziewczyna, która biega rano">
+                
+                <div class="text-in-section">
+                <a href=""><h3>Jak zacząć biegać</h3></a>
+                <h4>Robert McGonell</h4>
+                <p>Bieganie to popularny i łatwy do rozpoczęcia rodzaj sportu. Warto spróbować. Nie potrzebujemy profesjonalnego sprzętu, aby rozpocząć codzienne bieganie....</p>
+                </div>
+
+            </section>
+
+        </div>
     </section>
-    <section id="our_guides_section">
-        <img src="/images/arrow_left.svg" alt="strzałka w lewo">
-        <h1>Nasze przewodniki</h1>
-        <img src="/images/arrow_right.svg" alt="strzałka w prawo">
-        <div class="our_guides" id="1"></div>
-        <div class="our_guides" id="2"></div>
-        <div class="our_guides" id="3"></div>
-        <div class="our_guides" id="4"></div>
+
+    <section class="our_guides_section container">
+        <div class="our_guides_section__title">
+            <img src="/images/arrow_left.svg" alt="strzałka w lewo" class="our_guides_section__title--arrow-right responsive-image">
+            <h1 class="our_guides_section__title--title">Nasze przewodniki</h1>
+            <img src="/images/arrow_right.svg" alt="strzałka w prawo"  class="our_guides_section__title--arrow-left responsive-image">
+        </div>
+        <div class="our_guides_section__guides">
+            <div class="our_guides--1"></div>
+            <div class="our_guides--2"></div>
+            <div class="our_guides--3"></div>
+            <div class="our_guides--4"></div>
+        </div>
+
     </section>
+
     </main>
+
     <footer class="footer">
-        <a href="index.html"><img src="/images/Logo.svg" alt="logo"></a>
-        <div>
+        <div class="container">
+            <a href="index.html"><img src="/images/Logo.svg" alt="logo"></a>
+        <div class="footer-item">
             <h3>Nasza firma</h3>
         <ul>
             <li>
@@ -95,7 +121,7 @@
             </li>
         </ul>
         </div>
-        <div>
+        <div class="footer-item">
             <h3>Dla biznesu</h3>
             <ul>
                 <li><a href="">Produkty</a></li>
@@ -103,7 +129,7 @@
                 <li><a href="">Kontakt</a></li>
             </ul>
         </div>
-        <div>
+        <div class="footer-item">
             <h3>Prawne</h3>
             <ul>
                 <li><a href="">Warunki świadczenia usług</a></li>
@@ -112,12 +138,15 @@
                 <li><a href="">Oświadczenie o wyjaśnialności</a></li>
             </ul>
         </div>
-        <div>
+        <div class="flex">
             <a href="instagram.com"><img src="/images/Instagram_icon.svg" alt="instagram"></a>
             <a href="facebook.com"><img src="/images/messenger_icon.svg" alt="messenger"></a>
             <a href="tiktok.com"><img src="/images/tiktok_icon.svg" alt="tiktok"></a>
         </div>
+        </div>
+        
     </footer>
+
 </body>
 <script src="main.js"></script>
 </html>
