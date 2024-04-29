@@ -56,7 +56,7 @@ html{
 **/
 
 .white-btn, 
-.dark-btn {
+.dark-btn, input {
     color: var(--text-color-100);
     background-color: var(--section-color-100);
     cursor: pointer;
@@ -64,7 +64,7 @@ html{
     font-family: var(--font-header);
     border: none;
     border-radius: 0.2rem;
-    padding: 0.75rem 2.5rem;
+    padding: 0.5rem 2rem;
 }
 .dark-btn{
     color: var(--background-color-100);
@@ -377,6 +377,10 @@ a:hover{
 .text-in-section{
     justify-self: left;
     align-self: left;
+}
+.label-for-guides{
+    text-align: center;
+    justify-self: center;
 }
 
 

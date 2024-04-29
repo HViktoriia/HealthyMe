@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="article.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="design_system.css">
+    <link rel="icon" href="/images/logo_flover.svg">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Article</title>
+</head>
+<body>
+    <div class="hero sticky">
+        <header class="header container">
+            <div class="header__logo">
+                <button class="w3-button  w3-xlarge" onclick="open_sidebar()">☰</button>
+                <a href="index.html"><img id="logo_image" src="/images/Logo.svg" alt="logotyp"></a>
+            </div>
+            <div class="header__menu hidden">
+                <img class="header__menu--textUp" id="tekst_up" src="/images/TekstUp.svg" alt=" przycisk zwiekszenie tekstu">
+                <img class="header__menu--textDown" src="/images/TextDown.svg" alt="przycisk zmniejszenie tekstu">
+                <img class="header__menu-contrast" src="/images/Contrast.svg" alt="zmiana koloru strony">
+                <a class="header__menu--signUp" href=""><img src="/images/Sign.svg" alt="zaloguj sie"></a>
+            </div>
+            <div class="header__icons">
+                <i class="bi bi-gear"></i>
+                <i class="bi bi-x hide"></i>
+            </div>
+        </header>
+    </div>
+    
+    <main>
+        <div class="hero_sidebar sticky">
+            <div class="menu_sidebar w3-bar-block w3-border-right" style="display:none" id="sidebarMenu">
+                <button onclick="close_sidebar()" class="w3-bar-item w3-large">Close &times;</button>        
+                <a href="" class="w3-bar-item w3-button">Zdrowie psychiczne</a>
+                        <a href="" class="w3-bar-item w3-button">Zdrowie fizyczne</a>
+                        <a href="" class="w3-bar-item w3-button">Czatbot</a>
+                        <a href="" class="w3-bar-item w3-button">Forum</a>
+                    <!-- <div class="menu_sidebar--socialMediaIcons"> -->
+                    <a class="w3-bar-item w3-button" href="instagram.com"><img src="/images/Instagram_icon.svg" alt="instagram"></a>
+                    <a class="w3-bar-item w3-button" href="facebook.com"><img src="/images/messenger_icon.svg" alt="messenger"></a>
+                    <a class="w3-bar-item w3-button" href="tiktok.com"><img src="/images/tiktok_icon.svg" alt="tiktok"></a>
+                    <!-- </div>   -->
+            </div>
+        </div>
+        <img src="/images/jared-rice-NTyBbu66_SI-unsplash.jpg" alt="" class="responsive-image article-image" style="height:30rem;">
+        <section class="container">
+            <h1>Medytacja, jej wpływ na zdrowie psychiczne</h1>
+            <h2>Kathrine May</h2>
+            <p>Morem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
+                Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna. Nam metus lacus, porttitor eu mauris a, blandit ultrices nibh. Mauris sit amet magna non ligula vestibulum eleifend. Nulla varius volutpat turpis sed lacinia. Nam eget mi in purus lobortis eleifend. Sed nec ante dictum sem condimentum ullamcorper quis venenatis nisi. Proin vitae facilisis nisi, ac posuere leo.
+                Nam pulvinar blandit velit, id condimentum diam faucibus at. Aliquam lacus nisi, sollicitudin at nisi nec, fermentum congue felis. Quisque mauris dolor, fringilla sed tincidunt ac, finibus non odio. Sed vitae mauris nec ante pretium finibus. Donec nisl neque, pharetra ac elit eu, faucibus aliquam ligula. Nullam dictum, tellus tincidunt tempor laoreet, nibh elit sollicitudin felis, eget feugiat sapien diam nec nisl. Aenean gravida turpis nisi, consequat dictum risus dapibus a. Duis felis ante, varius in neque eu, tempor suscipit sem. Maecenas ullamcorper gravida sem sit amet cursus. Etiam pulvinar purus vitae justo pharetra consequat. Mauris id mi ut arcu feugiat maximus. Mauris consequat tellus id tempus aliquet.
+                Vestibulum dictum ultrices elit a luctus. Sed in ante ut leo congue posuere at sit amet ligula. Pellentesque eget augue nec nisl sodales blandit sed et sem. Aenean quis finibus arcu, in hendrerit purus. Praesent ac aliquet lorem. Morbi feugiat aliquam ligula, et vestibulum ligula hendrerit vitae. Sed ex lorem, pulvinar sed auctor sit amet, molestie a nibh. Ut euismod nisl arcu, sed placerat nulla volutpat aliquet. Ut id convallis nisl. Ut mauris leo, lacinia sed elit id, sagittis rhoncus odio. Pellentesque sapien libero, lobortis a placerat et, malesuada sit amet dui. Nam sem sapien, congue eu rutrum nec, pellentesque eget ligula.
+                Nunc tempor interdum ex, sed cursus nunc egestas aliquet. Pellentesque interdum vulputate elementum. Donec erat diam, pharetra nec enim ut, bibendum pretium tellus. Vestibulum et turpis nibh. Cras vel ornare velit, ac pretium arcu. Cras justo augue, finibus id sollicitudin et, rutrum eget metus. Suspendisse ut mauris eu massa pulvinar sollicitudin vel sed enim. Pellentesque viverra arcu et dignissim vehicula. Donec a velit ac dolor dapibus pellentesque sit amet at erat. Phasellus porttitor, justo eu ultrices vulputate, nisi mi placerat lectus, sed rutrum tellus est id urna. Aliquam pellentesque odio metus, sit amet imperdiet nisl sodales eu. Quisque viverra nunc nec vestibulum dapibus. Integer nec diam a libero tincidunt varius sed vel odio. Donec rutrum dapibus massa, vel tempor nulla porta id. Suspendisse vulputate fermentum sem sollicitudin facilisis. Aliquam vehicula sapien nec ante auctor, quis mollis leo tincidunt.</p>
+        </section>
+
+        <section class="our_guides_section container">
+            <div class="our_guides_section__title">
+                <img src="/images/arrow_left.svg" alt="strzałka w lewo" class="our_guides_section__title--arrow-right responsive-image">
+                <h1 class="our_guides_section__title--title">Inne artykuły</h1>
+                <img src="/images/arrow_right.svg" alt="strzałka w prawo"  class="our_guides_section__title--arrow-left responsive-image">
+            </div>
+            <div class="our_guides_section__guides">
+                <a href="">
+                    <div class="our_guides--1 flex">
+                        <img src="/images/kate-stone-matheson-uy5t-CJuIK4-unsplash.jpg" alt="kotek, spi w lozku" class="responsive-image image-in-sections">
+                        <!-- <label for="" class="label-for-guides">Sen, wszystko, co potrzebne wiedzieć</label> -->
+                    </div>
+                </a>
+                
+                    <a href="">
+                        <div class="our_guides--2 flex">
+                        <img src="/images/boxed-water-is-better-rXJXsecq8YU-unsplash.jpg" alt="woda" class="responsive-image image-in-sections">
+                        <label for="" class="label-for-guides"></label>
+                        </div>
+                    </a>
+                    
+                
+                    <a href="">
+                        <div class="our_guides--3 flex">
+                            <img src="/images/odiseo-castrejon-1CsaVdwfIew-unsplash.jpg" alt="" class="responsive-image image-in-sections">
+                            <!-- <label for="" class="label-for-guides">Pożywienie</label> -->
+                        </div>
+                    </a>
+                    
+                
+                    <a href="">
+                        <div class="our_guides--4 flex">
+                            <img src="/images/andraz-lazic-pg3E6_VioZY-unsplash.jpg" alt="" class="responsive-image image-in-sections">
+                            <!-- <label for="" class="label-for-guides">Wyciecki w górach</label> -->
+                        </div>
+                    </a>
+                    
+            </div>
+    
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <a href="index.html"><img class="responsive-image" src="/images/Logo.svg" alt="logo"></a>
+            </div>
+            <div class="footer-item">
+                <h3>Nasza firma</h3>
+            <ul>
+                <li>
+                    <a href="">O nas</a>
+                </li>
+                <li>
+                    <a href="">Bezpieczeństwo</a>
+                </li>
+                <li>
+                    <a href="">Nasz zespół</a>
+                </li>
+                <li>
+                    <a href="">Kontakt</a>
+                </li>
+            </ul>
+            </div>
+            <div class="footer-item">
+                <h3>Dla biznesu</h3>
+                <ul>
+                    <li><a href="">Produkty</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h3>Prawne</h3>
+                <ul>
+                    <li><a href="">Warunki świadczenia usług</a></li>
+                    <li><a href="">Polityka prywatności</a></li>
+                    <li><a href="">Ustawienia plików cookie</a></li>
+                    <li><a href="">Oświadczenie o wyjaśnialności</a></li>
+                </ul>
+            </div>
+            <div class="flex">
+                <a href="instagram.com"><img src="/images/Instagram_icon.svg" alt="instagram"></a>
+                <a href="facebook.com"><img src="/images/messenger_icon.svg" alt="messenger"></a>
+                <a href="tiktok.com"><img src="/images/tiktok_icon.svg" alt="tiktok"></a>
+            </div>
+    
+            
+        </footer>
+        <script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer></script>
+</body>
+</html>

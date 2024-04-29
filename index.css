@@ -64,3 +64,12 @@
     gap: 2rem;
     padding: 2rem;
 }
+
+.about-us-section{
+    background-color: var(--section-color-75);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
